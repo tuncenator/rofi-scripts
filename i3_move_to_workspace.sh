@@ -6,6 +6,6 @@ function gen_workspaces()
 }
 
 
-WORKSPACE=$( (gen_workspaces)  | rofi -width 10 -font 'Terminus (TTF) 12' -dmenu -p "WS")
+WORKSPACE=$( (gen_workspaces)  | rofi -width 10 -font 'Terminus 12' -dmenu -p "WS")
 
 i3-msg move container to workspace "${WORKSPACE}"
